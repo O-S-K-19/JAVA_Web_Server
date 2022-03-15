@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Skranji&display=swap');
+
+
+/* pour le corps de la page */
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
+  background-color: rgb(43, 42, 43);
+  max-width: 950px;
+  max-height: max-content;
+  
+
+}
+/*
+::selection{
+  color: #fff;
+  background: #664AFF;
+  
+}*/
+/* for containers */
+.main{
+  height: auto;
+  width: auto;
+  
+}
+
+/* for OSK.....*/
+.main #logo{
+  position: relative;
+  top: 30px;
+  left: 35%;
+  
+  font-family:'Skranji',cursive;
+  font-size: 85px; 
+  color: rgb(7, 95, 196);
+  
+      
+   
+}
+/*   for suggestion box */
+.main .search-input{
+  
+  background: rgb(152, 15, 15);
+  width: 80%;
+  border-radius: 5px;
+  position: relative;
+  top: 30px;
+  left: 45%;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+/* for input box */
+.search-input input{
+  font-size: 100px;
+  height: 65px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 28px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: all;
+  /*max-height: auto;*/
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  position: absolute;
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+  background-color: rgb(70, 70, 70);
+  z-index: 1;
+  width: 97.5%;
+}
+
+.autocom-box li{
+  font-size: 28px;
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+
+/* for active input box shadow */
+.main .search-input input:hover, .main .search-input input:focus{
+  -webk-webkit-box-shadow: -8px 10px 29px 18px rgb(7, 95, 196);
+  -moz-box-shadow: -8px -10px 29px 18px rgb(7, 95, 196);
+  box-shadow: 8px 2px 29px 8px rgb(7, 95, 196);
+  border:none;
+}
+
+/* for mouse on suggestion box */
+.autocom-box li:hover{
+  /*background: #efefef;*/
+  background: #8c8af2;
+}
+
+/* for search icon */
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 40px;
+  color: #644bff;
+  cursor: pointer;
+}
+/*pour le footer*/
+footer{
+  
+  font-family: 'Nosifer', cursive;
+  font-size: 40px;
+  position: relative;
+  top: 350px;
+  left: 50%;
+}
